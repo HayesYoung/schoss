@@ -1,13 +1,13 @@
 import * as React from 'react';
 import styled from 'styled-components'
 
-import PcNav from "../Nav/PcNav"
+// import PcNav from "../Nav/PcNav"
 
 export default function Index(props: any) {
 
     return (
         <CssStyle>
-            <PcNav></PcNav>
+            {/* <PcNav></PcNav> */}
             <h1>黄雨杨</h1>
         </CssStyle>
     )

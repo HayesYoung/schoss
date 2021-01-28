@@ -1,19 +1,20 @@
 import React from 'react';
 import './App.scss';
+// import styled from 'styled-components'
+import { renderRoutes } from 'react-router-config';
+import routes from './router/index';
 
-import styled from 'styled-components'
+import PcNav from "./views/Nav/PcNav"
 
-import Index from "./index/Main/Index"
-// import { start } from 'repl';
 
 
 function App() {
   return (
     <div className="App">
 
-      <div className="y-bgc-index">
-        <Index></Index>
-      </div>
+      <PcNav></PcNav>
+
+      {renderRoutes(routes)}
 
     </div>
   );
@@ -21,6 +22,7 @@ function App() {
 
 export default App;
 
-const CssStyled = styled.div`
-    position: relative;
-`
+// const CssStyled = styled.div`
+//     position: relative;
+//     width: 100%;
+// `
