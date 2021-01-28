@@ -1,15 +1,11 @@
 import React from 'react';
-<<<<<<< HEAD
-// import logo from './logo.svg';
-import './App.scss';
-=======
 import './App.scss';
 
 import styled from 'styled-components'
 
 import Index from "./index/Main/Index"
+// import { start } from 'repl';
 
->>>>>>> new
 
 function App() {
   return (
