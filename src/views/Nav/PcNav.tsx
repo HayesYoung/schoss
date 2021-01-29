@@ -20,9 +20,9 @@ function PcNav(props: any) {
                 <NavLink to="/main" className="y-navlink">English</NavLink>
                 <NavLink to="/main" className="y-navlink">数学</NavLink>
                 <NavLink to="/main" className="y-navlink">政治</NavLink>
-                <NavLink to="/main" className="y-navlink">Japanese</NavLink>
+                <NavLink to="/main" className="y-navlink">日本語</NavLink>
             </div>
-            {/* <h1>黄雨杨</h1> */}
+            <div>..</div>
         </CssStyle>
     )
 }
@@ -32,23 +32,34 @@ export default withRouter(PcNav)
 const CssStyle = styled.div`
     position: relative;
     width: 100%;
+    text-align: center;
 
     /* Pc端 */
     @media only screen and (min-width: 1336px) {
-        background-color: orange;
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        
+        .y-logo{
+            font-size: 24px;
+        }
+        background-color: red;
     }
 
 
     /* 适配ipad */
     @media only screen and (min-width: 767px) and (max-width: 1336px) {
+        display: grid;
+        grid-template-columns: 1fr 6fr 1fr;
+
+
         .y-logo{
-            line-height: 50px;
+            /* line-height: 50px;
             padding-top: 20px;
-            padding-left: 40px;
+            padding-left: 40px; */
 
             user-select: none;
 
-            font-size: 20px;
+            font-size: 16px;
             color: orange;
         }
     }
@@ -58,8 +69,7 @@ const CssStyle = styled.div`
     @media only screen and (max-width: 767px) {
         display: none;
     }
-    /* display: grid;
-    grid-template-columns: 1fr 3fr; */
+    
 
     
 
